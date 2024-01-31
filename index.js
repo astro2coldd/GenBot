@@ -1,5 +1,6 @@
 const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
+const keep_alive = require('./keep_alive.js')
 const { join } = require("path");
 const {prefix, serverId, ownerId, coownerId, genChannelOnlyId, TOKEN} = require('./config.json');
 const client = new Client({ disableMentions: "everyone" });
